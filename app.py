@@ -14,4 +14,4 @@ os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggin
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-13b-chat-hf/raw/main/config.json -d /home/demo/source/text-generation-webui/models/Llama-2-13b-chat-hf -o config.json")
 os.system(f"aria2c --console-log-level=error -c -x 16 -s 16 -k 1M https://huggingface.co/4bit/Llama-2-13b-chat-hf/raw/main/generation_config.json -d /home/demo/source/text-generation-webui/models/Llama-2-13b-chat-hf -o generation_config.json")
 
-os.system(f"python server.py --chat --listen-port 8266 --model /home/demo/source/text-generation-webui/models/Llama-2-13b-chat-hf")
+os.system(f"python server.py --chat --listen-port 8266 --load-in-8bit --model /home/demo/source/text-generation-webui/models/Llama-2-13b-chat-hf")

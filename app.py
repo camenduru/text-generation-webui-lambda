@@ -1,6 +1,6 @@
 import os
 os.system(f"git lfs install")
-os.system(f"git clone -b v1.8 https://github.com/camenduru/text-generation-webui /home/demo/source/text-generation-webui")
+os.system(f"git clone -b v1.8-lambda https://github.com/camenduru/text-generation-webui /home/demo/source/text-generation-webui")
 os.chdir(f"/home/demo/source/text-generation-webui")
 os.system(f"pip install -r requirements.txt")
 
